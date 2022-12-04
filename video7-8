@@ -1,3 +1,44 @@
+
+----CW1_video 7
+--select EmployeeID,
+--case
+--when Notes like '% BA %' then 'Academic'
+--else 'High School'
+--end as Knowladge
+--from dbo. Employees
+
+
+----CW2_video 7
+--select Customer ID,
+--case
+--when Region is null then 'Ein Ezor'
+--else Region
+--end as Region
+--from dbo. Customermers
+
+----CW1-3_video 7
+--create trigger trigger_newPrices on myProducts
+--for update
+--as
+--begin
+--insert into newProductsPrice Change (Product ID, UnitPrice)
+--select Product ID, UnitPrice from inserted
+--end
+--update myProducts
+--set UnitPrice = UnitPrice + 10
+--where Product Name like 'ch%'
+--select count (*) from myProducts
+--where Product Name like 'ch%'
+--select * from newProductsPriceChange
+
+----CW1_video 8
+--select * from [Order Details]
+--where OrderID in 
+--(select OrderId
+--from Orders
+--where EmployeeID = 1)
+
+------------------------------------------------------------------------------------------------------------------
 ----Q1_video 7
 --select *,
 --case
